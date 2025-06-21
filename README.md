@@ -46,5 +46,36 @@ Key Highlights
 
     CI/CD Pipeline Integration:
     Gain insights into setting up automated development pipelines, boosting efficiency and minimizing errors during the deployment phase.
+Team Roles
+    Product owner (PO)
 
-This structured approach ensures learners not only build technical skills but also adopt a mindset geared toward problem-solving, scalability, and industry-grade project execution.
+        Holds responsibility for a product vision and evolution
+    
+        Makes sure the final product meets customer requirements
+
+    Project manager (PM)
+
+        Makes sure a product or its part is delivered on time and within budget
+    
+        Manages and motivates the software development team
+    
+    UI/UX designer
+
+        Transforms a product vision into user-friendly designs
+    
+        Creates user journeys for the best user experience and highest conversion rates
+
+
+    Software architect
+    
+        Designs a high-level software architecture
+    
+        Selects appropriate tools and platforms to implement the product vision
+
+    Software developer
+
+        Engineers and stabilizes the product
+    
+        Solves any technical problems emerging during the development lifecycle
+    
+        Sets up code quality standards and performs code reviews
