@@ -108,3 +108,63 @@ Feature Breakdown
     Payment Processing: Integrate a payment system to handle transactions and record payment details.
     Review System: Allow users to leave reviews and ratings for properties.
     Data Optimization: Ensure efficient data retrieval and storage through database optimizations.
+
+API Security
+
+        Authentication
+
+        What it is: Verifying the identity of users or systems attempting to access the API.
+
+        Implementation: We use OAuth2 with JWT (JSON Web Tokens) or API keys depending on the service context.
+
+        Why it matters: Prevents unauthorized access to resources, ensuring that only registered and verified users can interact with the platform.
+
+    Authorization
+
+        What it is: Ensuring that authenticated users only have access to the resources and actions they're permitted to use.
+
+        Implementation: Role-based access control (RBAC) is applied to restrict access based on user roles (e.g., agent, admin, buyer).
+
+        Why it matters: Protects sensitive endpoints and operations (e.g., listing management, admin controls) from being misused or accessed by unauthorized users.
+
+    Rate Limiting
+
+        What it is: Limiting the number of API requests a client can make in a given timeframe.
+
+        Implementation: We use middleware such as Flask-Limiter or Django Ratelimit to throttle excessive requests.
+
+        Why it matters: Prevents abuse, denial-of-service (DoS) attacks, and reduces load on the server, ensuring availability for all users.
+
+    Data Validation and Sanitization
+
+        What it is: Validating and cleaning input data to prevent injection attacks and ensure data integrity.
+
+        Implementation: Strict schema validation using libraries like Marshmallow or Pydantic.
+
+        Why it matters: Prevents injection attacks (SQLi, XSS), malformed data, and application crashes.
+
+    HTTPS Enforcement
+
+        What it is: Ensuring all data transmission between client and server is encrypted.
+
+        Implementation: Enforced HTTPS using SSL/TLS certificates.
+
+        Why it matters: Protects against man-in-the-middle (MITM) attacks and keeps user data secure during transit.
+
+    Secure Storage of Credentials
+
+        What it is: Safeguarding sensitive information like passwords and API keys.
+
+        Implementation: Passwords are hashed using bcrypt or Argon2; environment variables are used to store secrets.
+
+        Why it matters: Prevents credential theft in case of a data breach.
+
+    Why Security Matters
+    
+        User Data Protection: APIs handle sensitive user information (emails, phone numbers, addresses). Proper authentication and encryption ensure this data is not leaked or exposed.
+    
+        Business Integrity: Preventing unauthorized access protects property listings and financial transactions, preserving trust and compliance.
+    
+        Platform Availability: Rate limiting and input sanitization defend against abuse and attacks that could bring down services.
+    
+        Compliance: Adhering to data protection laws (e.g., POPIA, GDPR) is crucial for legal operation and building user trust.
