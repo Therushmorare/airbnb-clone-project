@@ -47,6 +47,7 @@ Key Highlights
     CI/CD Pipeline Integration:
     Gain insights into setting up automated development pipelines, boosting efficiency and minimizing errors during the deployment phase.
 Team Roles
+
     Product owner (PO)
 
         Holds responsibility for a product vision and evolution
